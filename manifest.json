@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Hacker News Hide Domain",
+  "version": "1.2.1",
+  "description": "Auto-hides configured domains on Hacker News via the Hide button",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://news.ycombinator.com/*"
+      ],
+      "js": [
+        "extension.js"
+      ]
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "firefox-hn-hide-domain@hubelbauer.net"
+    }
+  }
+}
